@@ -1,0 +1,36 @@
+package Q2;
+
+public class TesteCalculadora {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		Calculadora c = new Calculadora();
+
+		int esc=0;
+
+		c.num1=0;
+		c.num2=0;
+		c.result=0;
+
+
+		System.out.print("\t\t ESCOLHA UMA OPCAO \n\n\t 1 SOMAR \n\n\t 2 SUBTRAIR \n\n\t 3 MULTIPLICAR \n\n\t 4 DIVIDIR \n\n Escolha uma opcao: ");
+		esc = ler.nextInt();
+
+		if(esc==1) {
+			c.Somar();
+		}
+		else if(esc==2) {
+			c.Subtrair();
+		}
+		else if(esc==3) {
+			c.Multiplicar();
+		}
+		else if(esc==4) {
+			c.Dividir();
+		}else{
+			System.out.println("Invalido");
+		}
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package Q2;
+
+import java.util.*;
+
+public class Calculadora {
+	Scanner ler = new Scanner(System.in);
+	double num1=0,num2=0, result = 0;
+	
+	int Multiplicacao() {
+		System.out.println("Digite o primeiro numero: ");
+		num1=ler.nextDouble();
+		System.out.println("Digite o segundo numero: ");
+		num2=ler.nextDouble();
+		result = num1*num2;
+		System.out.println("O resultado de "+num1+" * "+num2+" = "+result);
+		return 0;
+	}
+	int Divisao() {
+		System.out.println("Digite o primeiro numero: ");
+		num1=ler.nextDouble();
+		System.out.println("Digite o segundo numero: ");
+		num2=ler.nextDouble();
+		result = num1/num2;
+		System.out.println("O resultado de "+num1+" / "+num2+" = "+result);
+		return 0;
+	}
+	int Soma() {
+		System.out.println("Digite o primeiro numero: ");
+		num1=ler.nextDouble();
+		System.out.println("Digite o segundo numero: ");
+		num2=ler.nextDouble();
+		result = num1+num2;
+		System.out.println("O resultado de "+num1+" + "+num2+" = "+result);
+		return 0;
+	}
+	int Subtracao() {
+		System.out.println("Digite o primeiro numero: ");
+		num1=ler.nextDouble();
+		System.out.println("Digite o segundo numero: ");
+		num2=ler.nextDouble();
+		result = num1-num2;
+		System.out.println("O resultado de "+num1+" - "+num2+" = "+result);
+		return 0;
+	}
+
+}

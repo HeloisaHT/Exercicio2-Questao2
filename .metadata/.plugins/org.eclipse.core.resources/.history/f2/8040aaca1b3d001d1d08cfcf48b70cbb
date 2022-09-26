@@ -1,0 +1,43 @@
+package Q2;
+
+import java.util.Scanner;
+
+public class TesteCalculadora {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		Calculadora calc = new Calculadora();
+
+		int esc=0;
+
+		calc.num1=0;
+		calc.num2=0;
+		calc.result=0;
+
+
+		System.out.println("Calculadora");
+		System.out.println("1 Multiplicacao");
+		System.out.println("2 Divisao");
+		System.out.println("3 Adicao");
+		System.out.println("4 Subtracao");
+		System.out.println("Escolha sua operacao:");
+		esc = leia.nextInt();
+
+		if(esc==1) {
+			calc.Multiplicar();
+		}
+		else if(esc==2) {
+			calc.Dividir();
+		}
+		else if(esc==3) {
+			calc.Somar();
+		}
+		else if(esc==4) {
+			calc.Subtrair();
+		}else{
+			System.out.println("Nao foi possivel fazer essa operacao.");
+		}
+
+	}
+
+}
